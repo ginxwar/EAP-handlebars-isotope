@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HandleBars and Isotope</title>
+
+
+	<!-- styles -->
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link href="isotope.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet"> 
+
+	<!-- vendors -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+
+	<!-- plugins -->
+	<script src="jquery.handlebars.js"></script>
+
+	<!-- custom -->
+	<script src="data.js"></script>
+	<script src="app.js"></script>
+
+</head>
+<body>
+
+	<script id="programTemplate" type="text/x-handlebars-template">
+		{{#each people}}
+			<div class="well name">{{name}}</div>
+		{{/each}}
+	</script>
+
+
+
+	<div>
+
+		<div id="results">
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+			<div class="well name">name goes here</div>
+		</div>
+
+	</div>
+
+	
+</body>
+</html>
